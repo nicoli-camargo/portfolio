@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara Martinez - Fotógrafa</title>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #434343;
+            color: #f7f0f0;
+        }
+
+
+        header {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url(logo.PNG);
+            background-color: #b82f2f;
+            color: #000000;
+            padding: 20px;
+            text-align:right;
+            background-repeat: no-repeat;
+
+
+        }
+
+
+        header h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            font-size: 3rem;
+        }
+
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #000000;
+        }
+
+
+        nav a {
+            color: #ff0101c1;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+
+
+        nav a:hover {
+            color: #c72512;
+
+
+        }
+
+
+        .about,
+        .portfolio,
+        .contact {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+
+        .about img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+
+        .about h2,
+        .portfolio h2,
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+
+        .portfolio img {
+            width: 31%;
+            margin: 3px;
+            border-radius: 5px;
+        }
+
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+        .contact button {
+            padding: 15px;
+            background-color: #b72a1b;
+            color: rgb(0, 0, 0);
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+
+        .contact button:hover {
+            background-color: #ff1e00;
+        }
+
+
+        footer {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <header>
+        <h1>Tattoo</h1>
+        <p>Imagens de tattoo</p>
+    </header>
+
+
+    <nav>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#about">Sobre Mim</a>
+        <a href="#contact">Cadastro</a>
+    </nav>
+
+  
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <img src="luffy.jpg" alt="Casamento 1">
+        <img src="sukuna 2.jpg" alt="Evento Corporativo 2">
+        <img src="sukuna.jpg" alt="Evento Corporativo">
+        <img src="gaara.jpg" alt="Casamento 2">
+        <img src="drago.jpg" alt="Casamento 3">
+        <img src="attac on titan.jpg" alt="Evento Corporativo 3">
+        <img src="leao rei.webp" alt="Casamento 1">
+        <img src="leao.webp" alt="Casamento 1">
+        <img src="lobo.jpg" alt="Casamento 1">
+        <img src="naruto.jpg" alt="Casamento 1">
+        <img src="ace.jpg" alt="Casamento 1">
+        <img src="aranha.jpg" alt="Casamento 1">
+        
+    </section>
+
+
+    <section class="about" id="about">
+        <h2>Sobre Nós</h2>
+        <p>Sobre Nós
+
+            Bem-vindo ao [Nome do Estúdio], um espaço dedicado à arte da tatuagem e à expressão pessoal. Fundado por [seu nome] e uma equipe de tatuadores experientes, nosso estúdio é mais do que um lugar para fazer tatuagens – é um ambiente acolhedor e profissional, onde cada cliente é tratado com respeito e cuidado.
+            Aqui, trabalhamos com diferentes estilos de tatuagem, incluindo [listar estilos: realismo, tradicional, geométrico, aquarela, etc.], e nosso objetivo é transformar suas ideias em arte única e personalizada. Cada tatuagem é feita com atenção aos detalhes, garantindo qualidade e segurança em todo o processo.
+            Nosso compromisso com a higiene e com o bem-estar dos clientes é absoluto, seguindo rigorosamente todas as normas de segurança e esterilização. Além disso, buscamos proporcionar uma experiência tranquila e confortável, desde o primeiro contato até a finalização da sua tatuagem.
+            Se você está em busca de uma tatuagem que tenha significado e seja feita por profissionais apaixonados, estamos prontos para ajudá-lo a criar sua próxima obra de arte.
+            Visite-nos e faça parte dessa jornada criativa!<br>
+            [Informações de contato ou link para portfólio]
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Faça seu Cadastro Aqui:</h2>
+        <form action="fotografa.php" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="email" name="email" placeholder="Seu telefone" required>
+            <input type="email" name="email" placeholder="data de nascimento" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Clara Martinez Fotografia. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>
